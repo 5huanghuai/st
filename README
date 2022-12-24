@@ -1,34 +1,16 @@
-st - simple terminal
---------------------
-st is a simple terminal emulator for X which sucks less.
 
+# note
 
-Requirements
-------------
-In order to build st you need the Xlib header files.
+only do some patches
 
+patched 
 
-Installation
-------------
-Edit config.mk to match your local setup (st is installed into
-the /usr/local namespace by default).
+st-focused (alpha+focused)
 
-Afterwards enter the following command to build and install st (if
-necessary as root):
+st-scrollback-20210507-4536f46.diff(based scroll)
+st-scrollback-mouse-altscreen-20220127-2c5edf2.diff(allow mouse to scroll)
 
-    make clean install
+st-anysize-20220718-baa9357.diff(full st)
 
-
-Running st
-----------
-If you did not install st with make clean install, you must compile
-the st terminfo entry with the following command:
-
-    tic -sx st.info
-
-See the man page for additional details.
-
-Credits
--------
-Based on Aurélien APTEL <aurelien dot aptel at gmail dot com> bt source code.
+t-dynamic-cursor-color-0.8.4.diff
 
